@@ -36,8 +36,8 @@ This project implements a dictionary using an AVL Tree data structure. The dicti
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/SaiKiranNandipati/-Spectrum-sensing-using-Matched-filter--using-MATLAB.git
-    cd -Spectrum-sensing-using-Matched-filter--using-MATLAB
+    git clone https://github.com/SaiKiranNandipati/Data_structures-Algorithms.git
+    cd /AVL_treee_Implementation
     ```
 
 2. **Compile the source files**:
@@ -59,5 +59,6 @@ This project implements a dictionary using an AVL Tree data structure. The dicti
 
 ### Example
 
-Given wordListFile.txt: dictStructure-avl-large.txt
-        inputFile.txt: test-dictionary-avl.txt
+Given 
+-wordListFile.txt: dictStructure-avl-large.txt
+-inputFile.txt: test-dictionary-avl.txt
