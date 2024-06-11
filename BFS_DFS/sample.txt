@@ -1,0 +1,21 @@
+
+            // Initialize an array to keep track of visited vertices
+            boolean[] visited = new boolean[g.getVertexCount()];
+
+            // Iterate through all vertices to handle disconnected components
+            for (int vertex = 0; vertex < g.getVertexCount(); vertex++) {
+                if (!visited[vertex]) {
+                    // Perform BFS starting from the unvisited vertex
+                    List<Integer> bfsOrder = g.breadthFirstSearch(vertex);
+                    for (Integer item : bfsOrder) {
+                        System.out.print(item + " ");
+                    }
+
+                    // Mark all visited vertices in this connected component
+                    for (Integer visitedVertex : bfsOrder) {
+                        visited[visitedVertex] = true;
+                    }
+                }
+            }
+
+
