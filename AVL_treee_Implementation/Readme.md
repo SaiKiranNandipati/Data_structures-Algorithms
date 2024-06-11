@@ -60,5 +60,5 @@ This project implements a dictionary using an AVL Tree data structure. The dicti
 ### Example
 
 Given 
--wordListFile.txt: dictStructure-avl-large.txt
--inputFile.txt: test-dictionary-avl.txt
+-'wordListFile.txt': dictStructure-avl-large.txt
+-'inputFile.txt': test-dictionary-avl.txt
