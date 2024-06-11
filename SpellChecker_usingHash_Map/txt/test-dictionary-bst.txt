@@ -1,0 +1,40 @@
+
+print original modified dictionary
+firstWord
+  abc
+    bbbb
+  goodStuff
+    someWord
+
+print second modified dictionary
+firstWord
+  abc
+  goodStuff
+    someWord
+      mmmm
+
+print third modified dictionary
+firstWord
+  abc
+  goodStuff
+    someWord
+      zzzz
+abc
+bbbb
+firstWord
+goodStuff
+someWord
+
+printing second dictionary after deleting the first
+abc
+firstWord
+goodStuff
+mmmm
+someWord
+
+printing third dictionary after deleting the first
+abc
+firstWord
+goodStuff
+someWord
+zzzz
