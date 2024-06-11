@@ -1,0 +1,47 @@
+The time and space complexity of Prim's algorithm for finding the Minimum Spanning Tree (MST) in a graph can be analyzed as follows:
+
+**Time Complexity**:
+
+1. **Priority Queue Operations**: In Prim's algorithm, a priority queue (min-heap) is used to select the minimum-weight edge at each step. The total number of priority queue operations is typically O(E log V), where E is the number of edges and V is the number of vertices in the graph. This is because we may add each edge to the priority queue once, and each insertion or deletion operation in the priority queue takes O(log E) time. In the worst case, E can be as large as V^2, so O(E log V) can be simplified to O(V^2 log V).
+
+2. **Loop Over Vertices**: The `while` loop in Prim's algorithm iterates V times, where V is the number of vertices in the graph. In each iteration, we perform constant-time operations.
+
+3. **Loop Over Neighbors**: For each vertex, we iterate over its neighbors to update the priority queue. In the worst case, this loop runs E times (once for each edge).
+
+So, the overall time complexity of Prim's algorithm is O(E log V), and it is dominated by the priority queue operations.
+
+**Space Complexity**:
+
+1. **Priority Queue**: The space required for the priority queue is O(E) because, in the worst case, all edges are added to the priority queue.
+
+2. **Visited Set**: We maintain a set of visited vertices, which takes O(V) space.
+
+3. **MST Edges**: The space required to store the MST edges depends on the size of the MST, which can have at most V-1 edges.
+
+Therefore, the space complexity of Prim's algorithm is O(V + E), where V is the number of vertices and E is the number of edges in the graph. In most cases, the space complexity simplifies to O(E) because E can be much larger than V in dense graphs.
+
+To summarize:
+- Time Complexity: O(E log V)
+- Space Complexity: O(E)
+
+
+-----------------
+
+The time complexity of the `primMST` method, which implements Prim's algorithm for finding a minimum spanning tree in a graph, depends on the data structures and algorithms used. Here's the analysis of the time complexity:
+
+1. **Initialization**: Initializing data structures such as sets, priority queues, and lists typically takes O(V) time, where V is the number of vertices in the graph.
+
+2. **While Loop**: The main part of the algorithm is the `while` loop, which iterates until all vertices are visited. In the worst case, the loop runs for all vertices, so it has a time complexity of O(V).
+
+3. **Priority Queue Operations**: Within the `while` loop, you perform operations on the priority queue (min-heap) to extract the minimum-weight edge. Each insertion and extraction operation on the priority queue takes O(log V) time. In the worst case, you perform these operations for all edges (E) in the graph, so the total time spent on priority queue operations is O(E * log V).
+
+4. **Checking If a Vertex is Visited**: In each iteration of the `while` loop, you check whether a vertex is already visited, which takes O(1) time.
+
+5. **Neighbor Iteration**: You iterate through the neighbors of the current vertex. In the worst case, this involves iterating through all edges in the graph (E).
+
+Combining these factors, the overall time complexity of Prim's algorithm using a binary heap (priority queue) for the minimum heap is:
+
+**O(V) + O(V) + O(E * log V) + O(1) + O(E) = O(E * log V)**
+
+So, the time complexity of `primMST` using a binary heap is **O(E * log V)**, where E is the number of edges, and V is the number of vertices in the graph. This is the common time complexity for Prim's algorithm when using a binary heap-based priority queue. If you use other data structures for the priority queue, such as a Fibonacci heap, you can achieve better time complexity, but implementing such data structures can be more complex.
+
