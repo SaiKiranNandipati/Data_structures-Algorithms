@@ -30,8 +30,8 @@ This project involves the creation and manipulation of graph structures using ad
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/your-username/graph-processing.git
-    cd graph-processing
+    git clone https://github.com/SaiKiranNandipati/Data_structures-Algorithms.git
+    cd BFS_DFS
     ```
 
 2. **Compile the Java files**:
